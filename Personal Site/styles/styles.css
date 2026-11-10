@@ -231,3 +231,62 @@ footer p {
     height: 50px;
     object-fit: contain;
 }
+
+/* Project Cards */
+#project_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    background-color: #EEF0F2;
+}
+
+/* Projects heading */
+#project_cards > h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #846A6A;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+/* Individual cards */
+#project_cards section {
+
+    text-align: center;
+}
+
+/* Card images */
+#project_cards img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: solid #A2999E 25px;
+    border-radius: 10px;
+    opacity: 50%;
+
+}
+
+/* Card headings */
+#project_cards section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #846A6A;
+}
+
+#project_cards section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #353B3C;
+}
+
+#project_cards img:hover{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: solid #A2999E 25px;
+    border-radius: 10px;
+    opacity: 75%;
+    transition: 0.3s ease;
+}
